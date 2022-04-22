@@ -1,0 +1,9 @@
+@startuml 0_6-new-note-spa
+title 0.6 New note (spa)
+
+note over browser: browser executes the event handler \n that renders new note to display
+
+browser->server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+note over server: server saves new note
+server-->browser: {"message":"note created"}
+@enduml
